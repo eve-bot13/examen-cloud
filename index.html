@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cloud Computing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="inicio">
+  <nav class="menu" aria-label="Menú principal">
+    <div class="menu-in">
+      <span class="marca">Infraestructura y Plataformas</span>
+      <ul>
+        <li><a class="enlace activo" href="index.html" aria-current="page">Cloud Computing</a></li>
+        <li><a class="enlace" href="conexion-remota.html">Conexión remota</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-in">
+      <h1>Cloud Computing</h1>
+      <p>Aprende de forma sencilla qué es la computación en la nube y cuáles son sus modelos de servicio y tecnologías principales.</p>
+      <ul class="chips">
+        <li><a href="#nube">Cloud Computing</a></li>
+        <li><a href="#saas">SaaS</a></li>
+        <li><a href="#paas">PaaS</a></li>
+        <li><a href="#iaas">IaaS</a></li>
+        <li><a href="#virtualizacion">Virtualización</a></li>
+        <li><a href="#docker">Docker</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="tema" id="nube">
+      <div class="texto">
+        <h2>Cloud Computing <small>La computación en la nube</small></h2>
+        <p>Es la entrega de servicios informáticos (servidores, almacenamiento, bases de datos, redes y software) a través de Internet. En lugar de comprar y mantener equipos propios, se alquilan los recursos y se paga solo por lo que se usa.</p>
+        <span class="ejemplo">Ejemplos: AWS, Microsoft Azure, Google Cloud</span>
+      </div>
+      <figure>
+        <svg viewBox="0 0 320 210" role="img" aria-label="Laptop, celular y servidor conectados a la nube">
+          <path class="l-azul c-blanco" d="M95 92a28 28 0 0 1 6-54 40 40 0 0 1 77-6 32 32 0 0 1 45 29 24 24 0 0 1-5 31z"/>
+          <text class="t" x="160" y="76">Nube</text>
+          <path class="l-punto" d="M60 150L120 100M160 150V104M262 150L205 100"/>
+          <rect class="c-noche" x="30" y="150" width="60" height="38" rx="4"/><rect class="c-azul" x="36" y="155" width="48" height="26" rx="2"/>
+          <rect class="c-noche" x="140" y="145" width="40" height="52" rx="6"/><rect class="c-azul" x="145" y="152" width="30" height="36" rx="2"/>
+          <rect class="c-noche" x="232" y="145" width="62" height="14" rx="3"/><rect class="c-noche" x="232" y="163" width="62" height="14" rx="3"/><rect class="c-noche" x="232" y="181" width="62" height="14" rx="3"/>
+          <circle class="c-menta" cx="242" cy="152" r="3"/><circle class="c-menta" cx="242" cy="170" r="3"/><circle class="c-menta" cx="242" cy="188" r="3"/>
+        </svg>
+        <figcaption>Equipos que usan recursos desde la nube</figcaption>
+      </figure>
+    </section>
+
+    <section class="tema" id="saas">
+      <div class="texto">
+        <h2>SaaS <small>Software como servicio</small></h2>
+        <p>El proveedor entrega una aplicación lista para usar desde el navegador y se encarga de todo lo demás. El usuario solo la utiliza, sin instalar nada.</p>
+        <span class="ejemplo">Ejemplos: Gmail, Microsoft 365, Google Docs</span>
+      </div>
+      <figure>
+        <svg viewBox="0 0 320 210" role="img" aria-label="Ventana de navegador con una aplicación lista para usar">
+          <rect class="l-noche" x="40" y="30" width="240" height="150" rx="10"/>
+          <path class="c-noche" d="M40 40a10 10 0 0 1 10-10h220a10 10 0 0 1 10 10v16H40z"/>
+          <circle class="c-rojo" cx="56" cy="43" r="4"/><circle cx="70" cy="43" r="4" fill="#f5b83d"/><circle class="c-menta" cx="84" cy="43" r="4"/>
+          <rect class="c-azul" x="58" y="72" width="90" height="12" rx="3"/>
+          <rect x="58" y="94" width="200" height="8" rx="3" fill="#c3d6ec"/><rect x="58" y="110" width="170" height="8" rx="3" fill="#c3d6ec"/><rect x="58" y="126" width="185" height="8" rx="3" fill="#c3d6ec"/>
+          <rect class="c-menta" x="58" y="148" width="70" height="20" rx="10"/>
+          <text class="t-b" x="93" y="162" style="font-size:11px">Usar</text>
+        </svg>
+        <figcaption>SaaS: se usa la aplicación ya terminada</figcaption>
+      </figure>
+    </section>
+
+    <section class="tema" id="paas">
+      <div class="texto">
+        <h2>PaaS <small>Plataforma como servicio</small></h2>
+        <p>Ofrece un entorno listo para crear, probar y publicar aplicaciones sin administrar servidores ni sistemas operativos. El programador se enfoca solo en su código.</p>
+        <span class="ejemplo">Ejemplos: Google App Engine, Heroku, Azure App Service</span>
+      </div>
+      <figure>
+        <svg viewBox="0 0 320 210" role="img" aria-label="Aplicación sobre una plataforma administrada">
+          <rect class="l-azul c-blanco" x="80" y="25" width="160" height="52" rx="8"/>
+          <text class="t" x="160" y="57">Tu aplicación</text>
+          <rect class="c-azul" x="50" y="90" width="220" height="34" rx="6"/><text class="t-b" x="160" y="112">Entorno de ejecución</text>
+          <rect class="c-noche" x="50" y="130" width="220" height="30" rx="6"/><text class="t-b" x="160" y="150">Sistema operativo</text>
+          <rect class="c-noche" x="50" y="166" width="220" height="30" rx="6" style="opacity:.75"/><text class="t-b" x="160" y="186">Servidores y red</text>
+        </svg>
+        <figcaption>PaaS: el proveedor administra todo lo de abajo</figcaption>
+      </figure>
+    </section>
+
+    <section class="tema" id="iaas">
+      <div class="texto">
+        <h2>IaaS <small>Infraestructura como servicio</small></h2>
+        <p>Entrega recursos básicos bajo demanda: máquinas virtuales, almacenamiento y redes. El usuario administra el sistema operativo y las aplicaciones.</p>
+        <span class="ejemplo">Ejemplos: Amazon EC2, Azure Virtual Machines, Google Compute Engine</span>
+      </div>
+      <figure>
+        <svg viewBox="0 0 320 210" role="img" aria-label="Servidores de una infraestructura en la nube">
+          <g>
+            <rect class="c-noche" x="80" y="25" width="160" height="40" rx="6"/><rect class="c-noche" x="80" y="72" width="160" height="40" rx="6"/><rect class="c-noche" x="80" y="119" width="160" height="40" rx="6"/>
+            <circle class="c-menta" cx="100" cy="45" r="5"/><circle class="c-menta" cx="100" cy="92" r="5"/><circle class="c-menta" cx="100" cy="139" r="5"/>
+            <rect x="125" y="41" width="95" height="8" rx="3" fill="#35557d"/><rect x="125" y="88" width="95" height="8" rx="3" fill="#35557d"/><rect x="125" y="135" width="95" height="8" rx="3" fill="#35557d"/>
+          </g>
+          <text class="t" x="160" y="188">Servidores, almacenamiento y red</text>
+        </svg>
+        <figcaption>IaaS: se alquila la infraestructura</figcaption>
+      </figure>
+    </section>
+
+    <section class="tema" id="virtualizacion">
+      <div class="texto">
+        <h2>Virtualización <small>Varios equipos en uno</small></h2>
+        <p>Permite ejecutar varios sistemas operativos o servidores virtuales sobre un mismo equipo físico, gracias a un programa llamado hipervisor. Así se aprovechan mejor los recursos y se ahorran costos.</p>
+        <span class="ejemplo">Ejemplos: VMware, VirtualBox, Hyper-V</span>
+      </div>
+      <figure>
+        <svg viewBox="0 0 320 210" role="img" aria-label="Tres máquinas virtuales sobre un hipervisor y un equipo físico">
+          <rect class="l-azul c-blanco" x="30" y="25" width="80" height="60" rx="6"/><text class="t" x="70" y="60">VM 1</text>
+          <rect class="l-azul c-blanco" x="120" y="25" width="80" height="60" rx="6"/><text class="t" x="160" y="60">VM 2</text>
+          <rect class="l-azul c-blanco" x="210" y="25" width="80" height="60" rx="6"/><text class="t" x="250" y="60">VM 3</text>
+          <rect class="c-azul" x="30" y="95" width="260" height="38" rx="6"/><text class="t-b" x="160" y="119">Hipervisor</text>
+          <rect class="c-noche" x="30" y="141" width="260" height="46" rx="6"/><text class="t-b" x="160" y="169">Equipo físico (hardware)</text>
+        </svg>
+        <figcaption>Máquinas virtuales sobre un solo equipo físico</figcaption>
+      </figure>
+    </section>
+
+    <section class="tema" id="docker">
+      <div class="texto">
+        <h2>Docker <small>Contenedores</small></h2>
+        <p>Docker empaqueta una aplicación con todo lo que necesita (código, librerías y configuración) en un contenedor. Es más ligero que una máquina virtual porque comparte el sistema operativo, y funciona igual en cualquier equipo.</p>
+        <span class="ejemplo">Comandos clave: docker build, docker run</span>
+      </div>
+      <figure>
+        <svg viewBox="0 0 320 210" role="img" aria-label="Tres contenedores sobre Docker Engine">
+          <rect class="l-azul c-blanco" x="30" y="25" width="80" height="60" rx="4"/><text class="t" x="70" y="60">App A</text>
+          <rect class="l-azul c-blanco" x="120" y="25" width="80" height="60" rx="4"/><text class="t" x="160" y="60">App B</text>
+          <rect class="l-azul c-blanco" x="210" y="25" width="80" height="60" rx="4"/><text class="t" x="250" y="60">App C</text>
+          <rect class="c-azul" x="30" y="95" width="260" height="38" rx="6"/><text class="t-b" x="160" y="119">Docker Engine</text>
+          <rect class="c-noche" x="30" y="141" width="260" height="46" rx="6"/><text class="t-b" x="160" y="169">Sistema operativo compartido</text>
+        </svg>
+        <figcaption>Contenedores que comparten el mismo sistema</figcaption>
+      </figure>
+    </section>
+
+    <div class="fila-boton"><a class="boton" href="#inicio">↑ Volver al inicio</a></div>
+  </main>
+
+  <a class="flotante" href="#inicio" aria-label="Volver al inicio de la página">↑ Inicio</a>
+  <footer>Examen práctico · Tecnología Superior en Administración de Infraestructura y Plataformas Tecnológicas</footer>
+</body>
+</html>

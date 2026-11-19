@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conexión remota</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="inicio">
+  <nav class="menu" aria-label="Menú principal">
+    <div class="menu-in">
+      <span class="marca">Infraestructura y Plataformas</span>
+      <ul>
+        <li><a class="enlace" href="index.html">Cloud Computing</a></li>
+        <li><a class="enlace activo" href="conexion-remota.html" aria-current="page">Conexión remota</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-in">
+      <h1>Conexión remota</h1>
+      <p>Controla un computador desde otro lugar, como si estuvieras frente a él. Se usa para soporte técnico, teletrabajo y administración de equipos.</p>
+      <ul class="chips">
+        <li><a href="#concepto">Concepto</a></li>
+        <li><a href="#anydesk">AnyDesk</a></li>
+        <li><a href="#teamviewer">TeamViewer</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="tema" id="concepto">
+      <div class="texto">
+        <h2>¿Qué es la conexión remota? <small>Acceso a distancia</small></h2>
+        <p>Es la tecnología que permite ver la pantalla de otro equipo y manejar su teclado y mouse a través de Internet o de una red. Así un técnico puede reparar un problema sin viajar hasta donde está el computador.</p>
+        <span class="ejemplo">Usos: soporte técnico, teletrabajo, administración de servidores</span>
+      </div>
+      <figure>
+        <svg viewBox="0 0 320 210" role="img" aria-label="Un equipo conectado a otro a través de Internet">
+          <rect class="l-noche" x="25" y="60" width="95" height="65" rx="6"/><rect class="c-noche" x="55" y="130" width="35" height="8"/><rect class="c-noche" x="42" y="138" width="61" height="6" rx="3"/>
+          <rect class="l-noche" x="200" y="60" width="95" height="65" rx="6"/><rect class="c-noche" x="230" y="130" width="35" height="8"/><rect class="c-noche" x="217" y="138" width="61" height="6" rx="3"/>
+          <path class="l-punto" d="M125 92H195"/>
+          <text class="t" x="72" y="97">Mi equipo</text><text class="t" x="247" y="97">Equipo remoto</text>
+          <text class="t" x="160" y="82" style="fill:var(--azul-osc);font-size:12px">Internet</text>
+        </svg>
+        <figcaption>Un equipo controla a otro a distancia</figcaption>
+      </figure>
+    </section>
+
+    <section class="tema" id="anydesk">
+      <div class="texto">
+        <h2>AnyDesk <small>Escritorio remoto rápido y ligero</small></h2>
+        <p>Programa de acceso remoto que se conecta con un código de 9 dígitos que identifica a cada equipo. Es muy liviano, permite transferir archivos y funciona en Windows, macOS, Linux, Android e iOS.</p>
+        <span class="ejemplo">Se conecta con: código de acceso (AnyDesk ID)</span>
+      </div>
+      <figure>
+        <svg viewBox="0 0 320 210" role="img" aria-label="Conexión remota con AnyDesk mediante un código">
+          <rect class="l-noche" x="25" y="45" width="95" height="65" rx="6"/><rect class="c-noche" x="55" y="115" width="35" height="8"/><rect class="c-noche" x="42" y="123" width="61" height="6" rx="3"/>
+          <rect class="l-noche" x="200" y="45" width="95" height="65" rx="6"/><rect class="c-noche" x="230" y="115" width="35" height="8"/><rect class="c-noche" x="217" y="123" width="61" height="6" rx="3"/>
+          <path class="l-punto" d="M125 78H195" style="stroke:#e0483e"/>
+          <rect class="c-rojo" x="110" y="150" width="100" height="34" rx="17"/><text class="t-b" x="160" y="172">AnyDesk</text>
+          <text class="t" x="72" y="82">Técnico</text><text class="t" x="247" y="82">Cliente</text>
+        </svg>
+        <figcaption>Conexión con AnyDesk mediante un código</figcaption>
+      </figure>
+    </section>
+
+    <section class="tema" id="teamviewer">
+      <div class="texto">
+        <h2>TeamViewer <small>Soporte, reuniones y acceso remoto</small></h2>
+        <p>Una de las herramientas de acceso remoto más usadas del mundo. Permite controlar equipos, compartir pantalla, hacer reuniones en línea y transferir archivos. Se conecta con un ID y una contraseña, y tiene versión gratuita para uso personal.</p>
+        <span class="ejemplo">Se conecta con: ID y contraseña</span>
+      </div>
+      <figure>
+        <svg viewBox="0 0 320 210" role="img" aria-label="Conexión remota con TeamViewer mediante ID y contraseña">
+          <rect class="l-noche" x="25" y="45" width="95" height="65" rx="6"/><rect class="c-noche" x="55" y="115" width="35" height="8"/><rect class="c-noche" x="42" y="123" width="61" height="6" rx="3"/>
+          <rect class="l-noche" x="200" y="45" width="95" height="65" rx="6"/><rect class="c-noche" x="230" y="115" width="35" height="8"/><rect class="c-noche" x="217" y="123" width="61" height="6" rx="3"/>
+          <path class="l-azul" d="M125 68H195M195 88H125"/>
+          <rect class="c-azul" x="105" y="150" width="110" height="34" rx="17"/><text class="t-b" x="160" y="172">TeamViewer</text>
+          <text class="t" x="72" y="82">Técnico</text><text class="t" x="247" y="82">Cliente</text>
+        </svg>
+        <figcaption>Conexión con TeamViewer mediante ID y contraseña</figcaption>
+      </figure>
+    </section>
+
+    <div class="fila-boton"><a class="boton" href="index.html">← Volver al inicio</a></div>
+  </main>
+
+  <a class="flotante" href="index.html" aria-label="Volver a la página de inicio">← Inicio</a>
+  <footer>Examen práctico · Tecnología Superior en Administración de Infraestructura y Plataformas Tecnológicas</footer>
+</body>
+</html>

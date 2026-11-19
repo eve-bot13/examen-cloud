@@ -1,0 +1,60 @@
+:root{--noche:#0f2742;--azul:#2a7de1;--azul-osc:#1b5fb4;--cielo:#e8f2fd;--menta:#17a589;--papel:#f6f9fd;--texto:#1d2f45;--suave:#5b6f86;--linea:#d3e1f1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:1.05rem;line-height:1.7;color:var(--texto);background:var(--papel)}
+a{color:var(--azul-osc)}
+:focus-visible{outline:3px solid #f5b83d;outline-offset:3px}
+
+/* Barra de menú */
+.menu{position:sticky;top:0;z-index:10;background:var(--noche);box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.menu-in{max-width:1000px;margin:0 auto;padding:.6rem 1rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.marca{color:#fff;font-weight:700;letter-spacing:.2px}
+.menu ul{list-style:none;margin:0;padding:0;display:flex;gap:.4rem}
+.menu a.enlace{display:block;padding:.45rem 1.1rem;border-radius:999px;color:#c9dcf2;text-decoration:none;font-weight:600}
+.menu a.enlace:hover{background:rgba(255,255,255,.12);color:#fff}
+.menu a.enlace.activo{background:var(--azul);color:#fff}
+
+/* Portada */
+.hero{background:linear-gradient(135deg,var(--noche) 0%,#1a4a85 100%);color:#fff;padding:3.2rem 1rem 3.6rem}
+.hero-in{max-width:1000px;margin:0 auto}
+.hero h1{margin:0 0 .6rem;font-size:clamp(2rem,5vw,3rem);line-height:1.15}
+.hero p{max-width:640px;margin:0 0 1.4rem;color:#d5e5f8}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0;list-style:none}
+.chips a{display:inline-block;padding:.35rem .9rem;border-radius:999px;background:rgba(255,255,255,.14);color:#fff;text-decoration:none;font-size:.95rem;border:1px solid rgba(255,255,255,.3)}
+.chips a:hover{background:#fff;color:var(--noche)}
+
+/* Contenido */
+main{max-width:1000px;margin:0 auto;padding:2rem 1rem 1rem}
+.tema{display:grid;grid-template-columns:1.1fr 1fr;gap:1.6rem;align-items:center;background:#fff;border:1px solid var(--linea);border-radius:16px;padding:1.6rem;margin-bottom:1.5rem;box-shadow:0 4px 14px rgba(15,39,66,.06)}
+.tema:nth-of-type(even) .texto{order:2}
+.tema h2{margin:.1rem 0 .5rem;font-size:1.6rem;color:var(--noche)}
+.tema h2 small{display:block;font-size:.95rem;font-weight:500;color:var(--azul-osc)}
+.tema p{margin:0 0 .7rem}
+.ejemplo{display:inline-block;background:var(--cielo);color:var(--azul-osc);border-radius:8px;padding:.25rem .7rem;font-size:.92rem}
+figure{margin:0}
+figure svg{display:block;width:100%;height:auto;background:var(--cielo);border-radius:12px}
+figcaption{margin-top:.5rem;font-size:.88rem;color:var(--suave);text-align:center}
+
+/* Botones */
+.fila-boton{text-align:center;padding:1rem 1rem 2.5rem}
+.boton{display:inline-block;background:var(--menta);color:#fff;text-decoration:none;font-weight:700;padding:.8rem 1.6rem;border-radius:999px;box-shadow:0 4px 12px rgba(23,165,137,.35)}
+.boton:hover{background:#12846f}
+.flotante{position:fixed;right:1rem;bottom:1rem;z-index:20;background:var(--noche);color:#fff;text-decoration:none;font-weight:600;padding:.65rem 1.1rem;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.35);font-size:.95rem}
+.flotante:hover{background:var(--azul)}
+
+footer{background:var(--noche);color:#b9cde4;text-align:center;padding:1.4rem 1rem;font-size:.9rem}
+
+/* Dibujos (SVG) */
+.c-azul{fill:var(--azul)}.c-noche{fill:var(--noche)}.c-blanco{fill:#fff}.c-menta{fill:var(--menta)}.c-rojo{fill:#e0483e}
+.l-azul{stroke:var(--azul);stroke-width:3;fill:none}.l-noche{stroke:var(--noche);stroke-width:3;fill:#fff}
+.l-punto{stroke:var(--azul);stroke-width:3;stroke-dasharray:6 5;fill:none}
+.t{font-family:"Segoe UI",Arial,sans-serif;font-size:14px;font-weight:600;fill:var(--noche);text-anchor:middle}
+.t-b{font-family:"Segoe UI",Arial,sans-serif;font-size:14px;font-weight:600;fill:#fff;text-anchor:middle}
+
+@media (max-width:760px){
+  .tema{grid-template-columns:1fr;padding:1.2rem}
+  .tema:nth-of-type(even) .texto{order:0}
+  .marca{display:none}
+  .menu-in{justify-content:center}
+}
